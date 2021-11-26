@@ -48,7 +48,7 @@ y_axis_data = tempC';  % transpose of 'tempC' represent the y-axis data
 
 k = conv(y_axis_data,Amp_point); % size(k) = [1 793] which is not the same length with original data
 
-w = conv(y_axis_data,Amp_point,'same'); %'same' is used to ensure the length of the convolution is the same as original data
+w = conv(y_axis_data,Amp_point,'same'); %'same' is used to ensure the length of % convolution is the same as original data
 plot(days,w)
 
 axis tight

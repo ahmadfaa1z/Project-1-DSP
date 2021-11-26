@@ -14,12 +14,20 @@ y = cos((2*pi*n)/7);
 y1 = cos((4*pi*n)/7);
 y2 = cos((pi*n)/7);
 
-% stem(y,'filled');
-% stem(y1,'filled');
-% stem(y2,'filled');
-
+% a)
+figure(1)
+stem(y,'filled');
+title('y(n)');
 axis tight
 
-%% a. y(n)
+% b)
+figure(2)
+stem(y1,'filled');
+title('y1(n)');
+axis tight
 
-
+% c)
+figure(3)
+stem(y2,'filled');
+title('y2(n)');
+axis tight
