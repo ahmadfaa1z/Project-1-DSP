@@ -8,7 +8,7 @@ Eiman Salleh (1728753)
 %}
 % Part 2: DISCRETE TIME SYSTEM
 
-n = [0:1:50];
+n = [0:1:50]; % Limiting the range of n up to 50
 
 y = cos((2*pi*n)/7);
 y1 = cos((4*pi*n)/7);

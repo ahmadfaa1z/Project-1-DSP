@@ -10,6 +10,8 @@ Eiman Salleh (1728753)
 
 %% a) 24-point Moving Average Filter
 %{
+Remove the comment bracket for part a)
+
 load bostemp
 days = (1:31*24)/24;
 figure(1)
@@ -44,7 +46,7 @@ title('50-point Moving Average Filter')
 point = 50;
 Amp_point = ones(1, point)/point;
  
-y_axis_data = tempC';  % transpose of 'tempC' represent the y-axis data
+y_axis_data = tempC';  % transpose 'tempC' from [744 1] to get [1 744]
 
 k = conv(y_axis_data,Amp_point); % size(k) = [1 793] which is not the same length with original data
 
